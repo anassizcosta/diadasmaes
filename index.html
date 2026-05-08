@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Mamãe ❤️</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playwrite+GB+S:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars-container" id="stars-container"></div>
+
+    <div class="menu-filtros">
+        <button onclick="mudarFiltro('none')">🌈</button>
+        <button onclick="mudarFiltro('grayscale(100%)')">🖤</button>
+        <button onclick="mudarFiltro('sepia(100%)')">📜</button>
+    </div>
+
+    <button id="musicaBtn" onclick="toggleMusica()">🎵</button>
+    <audio id="musicaSorridente" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="main-container">
+        
+        <header class="cabecalho-principal">
+            <span class="detalhe-flor">🌸</span>
+            <h1>Feliz Dia das Mães</h1>
+            <span class="detalhe-flor">🌸</span>
+        </header>
+
+        <div id="contador">Calculando amor...</div>
+        
+        <h2 id="Frase">Preparando...</h2>
+        
+        <div class="moldura-especial" onclick="proximaFoto(event)">
+            <div class="foto-wrapper">
+                <img id="imagem" src="" alt="Nossa memória">
+            </div>
+            <p class="instrucao-nova">Toque para ver mais ✨</p>
+        </div>
+
+        <button class="btn-abrir-carta" onclick="abrirCarta()">Ler minha cartinha 💌</button>
+
+        <footer class="rodape-carinho">
+            <span>Com todo o meu amor ❤️</span>
+        </footer>
+    </div>
+
+    <div id="modalCarta" class="modal">
+        <div class="conteudo-carta">
+            <span class="fechar" onclick="fecharCarta()">&times;</span>
+            <h2></h2>
+            <p>Mãe, cada foto dessa lista é um pedaço do meu coração. Eu amo voce!</p>
+            <p class="assinatura">Com amor, Nina </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
